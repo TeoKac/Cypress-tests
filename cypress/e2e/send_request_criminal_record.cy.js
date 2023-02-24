@@ -14,13 +14,13 @@ describe('Criminal record checkbox check', () => {
 
         cy.contains('New Criteria').click({force: true})
 
-        cy.get('input[name=name').type('Test #' + timestamp)
+        cy.get('input[name=name]').type('Test #' + timestamp)
 
         cy.contains('Second, select a location to display the accurate check availability and pricing').next().click()
         cy.contains('United States').click({force: true})
 
         cy.wait(1000)
-        cy.get('input[name=switch-criminal_record_check]').focus().click({force: true})
+        cy.get('input[name=switch-criminal_record_search]').focus().click({force: true})
 
         cy.get('input[name=additional_fees_consent]').click({force: true})
 

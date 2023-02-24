@@ -11,5 +11,6 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       return require('./cypress/plugins/index.js')(on, config)
     },
+    experimentalStudio: true
   },
 })
